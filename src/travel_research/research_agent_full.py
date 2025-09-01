@@ -17,12 +17,12 @@ from langgraph.graph import StateGraph, START, END
 
 from langchain_anthropic import ChatAnthropic
 from langchain_openai import ChatOpenAI
-from deep_research_from_scratch.utils import get_today_str
-from deep_research_from_scratch.prompts import final_report_generation_prompt
-from deep_research_from_scratch.state_scope import AgentState, AgentInputState
-from deep_research_from_scratch.research_agent_scope import clarify_with_user, write_travel_research_brief
-from deep_research_from_scratch.multi_agent_supervisor import supervisor_agent
-from deep_research_from_scratch.config import *
+from travel_research.utils import get_today_str
+from travel_research.prompts import final_report_generation_prompt
+from travel_research.state_scope import AgentState, AgentInputState
+from travel_research.research_agent_scope import clarify_with_user, write_travel_research_brief
+from travel_research.multi_agent_supervisor import supervisor_agent
+from travel_research.config import *
 # ===== Config =====
 
 from langchain.chat_models import init_chat_model
@@ -42,7 +42,7 @@ writer_model = ChatOpenAI(
 
 # ===== FINAL REPORT GENERATION =====
 
-from deep_research_from_scratch.state_scope import AgentState
+from travel_research.state_scope import AgentState
 
 async def final_travel_plan_generation(state: AgentState):
     """

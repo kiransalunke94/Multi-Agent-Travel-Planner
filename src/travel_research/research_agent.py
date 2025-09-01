@@ -14,10 +14,10 @@ from langchain.chat_models import init_chat_model
 from langchain_anthropic import ChatAnthropic
 from langchain_openai import ChatOpenAI
 
-from deep_research_from_scratch.state_research import ResearcherState, ResearcherOutputState
-from deep_research_from_scratch.utils import tavily_search, get_today_str, think_tool
-from deep_research_from_scratch.prompts import research_agent_prompt, compress_research_system_prompt, compress_research_human_message
-from deep_research_from_scratch.config import *
+from travel_research.state_research import ResearcherState, ResearcherOutputState
+from travel_research.utils import tavily_search, get_today_str, think_tool
+from travel_research.prompts import research_agent_prompt, compress_research_system_prompt, compress_research_human_message
+from travel_research.config import *
 # ===== CONFIGURATION =====
 
 # Set up tools and model binding

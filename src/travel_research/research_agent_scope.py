@@ -17,9 +17,9 @@ from langchain_core.messages import HumanMessage, AIMessage, get_buffer_string
 from langgraph.graph import StateGraph, START, END
 from langgraph.types import Command
 from langchain_openai import ChatOpenAI
-from deep_research_from_scratch.prompts import clarify_with_user_instructions, transform_messages_into_research_topic_prompt
-from deep_research_from_scratch.state_scope import AgentState, ClarifyWithUser, ResearchQuestion, AgentInputState
-from deep_research_from_scratch.config import *
+from travel_research.prompts import clarify_with_user_instructions, transform_messages_into_research_topic_prompt
+from travel_research.state_scope import AgentState, ClarifyWithUser, ResearchQuestion, AgentInputState
+from travel_research.config import *
 
 # ===== UTILITY FUNCTIONS =====
 

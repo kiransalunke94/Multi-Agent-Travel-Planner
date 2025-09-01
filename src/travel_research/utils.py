@@ -16,9 +16,9 @@ from langchain_core.runnables import RunnableConfig
 from langchain_core.tools import tool, InjectedToolArg
 from tavily import TavilyClient
 
-from deep_research_from_scratch.state_research import Summary
-from deep_research_from_scratch.prompts import summarize_webpage_prompt
-from deep_research_from_scratch.config import *
+from travel_research.state_research import Summary
+from travel_research.prompts import summarize_webpage_prompt
+from travel_research.config import *
 # ===== UTILITY FUNCTIONS =====
 
 def get_today_str() -> str:
