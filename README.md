@@ -2,11 +2,11 @@
 
 This project implements a Multi-Agent Travel Planner that generates personalized travel itineraries using a multi-phase workflow:
 
-Scope – Clarify the traveler’s preferences (destinations, budget, style)
+1. **Scope** – Clarify the traveler’s preferences (destinations, budget, style)
 
-Research – Run parallel research agents for flights, hotels, and activities
+2. **Research** – Run parallel research agents for flights, hotels, and activities
 
-Plan – Synthesize findings into a coherent day-by-day itinerary
+3. **Plane/Write**  – Synthesize findings into a coherent day-by-day itinerary
 
 The system leverages structured outputs, tool integration, and supervisor orchestration to produce detailed, user-aligned trip plans.
 
@@ -24,11 +24,13 @@ export PATH="/Users/$USER/.local/bin:$PATH"
 
 Installation
 # Clone the repository
-git clone https://github.com/langchain-ai/multi_agent_travel_planner
-cd multi_agent_travel_planner
+git clone https://github.com/kiransalunke94/Multi-Agent-Travel-Planner.git
+cd Multi-Agent-Travel-Planner
 
 # Install dependencies
 uv sync
+or
+pip install .
 
 Set up environment variables in .env (Rename env to .env):
 ```env
@@ -102,7 +104,6 @@ LANGSMITH_PROJECT=multi_agent_travel_planner
 Implementation Highlights:
 
     - Trip synthesis into structured plan format
-    - Ranking & filtering options based on constraints
     - Human-readable itinerary output
 
 🎯 Outcomes
