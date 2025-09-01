@@ -25,19 +25,19 @@ from langchain_core.messages import (
 from langgraph.graph import StateGraph, START, END
 from langgraph.types import Command
 
-from deep_research_from_scratch.prompts import lead_researcher_prompt
-from deep_research_from_scratch.research_agent import researcher_agent
-from deep_research_from_scratch.state_multi_agent_supervisor import (
+from travel_research.prompts import lead_researcher_prompt
+from travel_research.research_agent import researcher_agent
+from travel_research.state_multi_agent_supervisor import (
     SupervisorState,
     ConductResearch,
     ResearchComplete
 )
-from deep_research_from_scratch.utils import get_today_str, think_tool
+from travel_research.utils import get_today_str, think_tool
 
 from langchain_anthropic import ChatAnthropic
 from langchain_openai import ChatOpenAI
 
-from deep_research_from_scratch.config import *
+from travel_research.config import *
 
 
 def get_notes_from_tool_calls(messages: list[BaseMessage]) -> list[str]:
